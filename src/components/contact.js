@@ -3,7 +3,8 @@ import { Heading } from "./heading"
 export function Contact(){
     return(
         <div className="container contact-container" id="contact">
-            <Heading title="Contact" />
+            <Heading title="Contact" isContact={true} />
+
             <div className="row">
                 <div className="col">
                     <h2>For more Info</h2>
