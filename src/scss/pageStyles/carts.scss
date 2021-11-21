@@ -1,0 +1,27 @@
+.carts{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @media screen and (max-width : 575px){
+        @include flex(center,space-between ,column );
+
+    }
+}
+
+.cart {
+    @include flex(center,center ,column );
+    background-color: $gray;
+    padding: 15px;
+    margin: 1px;
+    p{
+        text-align: center;
+    }
+    @media screen and (max-width : 575px){
+        width: 50%;
+    }
+    @media screen and (max-width : 400px){
+        width: 70%;
+    }
+    @media screen and (max-width : 300px){
+        width: 90%;
+    }
+}

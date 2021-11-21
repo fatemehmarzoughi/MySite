@@ -1,0 +1,24 @@
+.bringToTop{
+    background-color: $mainColor;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    @include flex(center, center, row);
+    cursor: pointer;
+    &:active{
+        animation: grow 500ms;
+    }
+}
+
+
+@keyframes grow {
+    0% { width: 60px; height: 60px ;}
+    25% { width: 65px; height: 65px ;}
+    50% { width: 70px; height: 70px ;}
+    75% { width: 65px; height: 65px ;}
+    100% { width: 60px; height: 60px ;}
+}

@@ -1,0 +1,78 @@
+$slideShowHeight : 600px;
+
+.slideShowContainer{
+    overflow: hidden;
+    // width: 100%;
+    height: $slideShowHeight;
+    padding: 0%;
+    position: relative;
+
+}
+.imageStyle{
+    width: 25%;
+    height: $slideShowHeight;
+    // position: absolute;
+}
+
+.images{
+    width: 400%;
+    height: $slideShowHeight;
+    position: absolute;
+    @include flex(center,center ,row );
+    overflow: hidden;
+    transition: transform 200ms;
+}
+
+.cover{
+    @include flex( center, space-between ,row );
+    width: 100%;
+    height: $slideShowHeight;
+    background-color: $coverColor;
+    position: absolute;
+    z-index: 12;
+    direction: rtl;
+    color: $white;
+}
+
+.texts{
+    text-align: center;
+}
+
+.IconStyle{
+    @include flex(center,center ,row );
+    background-color: $mainColor;
+    border-radius: 60%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    &:active{
+        animation: grow 500ms infinite 
+    }
+}
+
+.image1Display{
+    transform: translateX(-1285px);
+}
+
+@keyframes grow {
+    0%   {
+        width: 60px;
+        height: 60px;
+    }
+    25%  {
+        width: 65px;
+        height: 65px;
+    }
+    50%  {
+        width: 70px;
+        height: 70px;
+    }
+    75%  {
+        width: 65px;
+        height: 65px;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+  }

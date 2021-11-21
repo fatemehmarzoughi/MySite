@@ -1,0 +1,19 @@
+.input{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.btn{
+    padding : 10px 50px;
+    background-color: $mainColor;
+    color: $white;
+    &:hover{
+        color: $white;
+    }
+}
+.contact-container{
+    margin-bottom: 100px;
+}

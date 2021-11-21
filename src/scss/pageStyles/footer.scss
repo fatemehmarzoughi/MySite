@@ -1,0 +1,14 @@
+.footer{
+    background-color: $mainColor;
+    padding : 20px;
+    text-align: center;
+    color : $white
+}
+.footerText{
+    margin : 0px;
+    padding:0px;
+    @include flex(center,center ,row );
+    .footerIcon{
+        margin-right: 5px;
+    }
+}

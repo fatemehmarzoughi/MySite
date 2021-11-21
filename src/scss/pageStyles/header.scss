@@ -1,0 +1,19 @@
+
+.list{
+    list-style: none;
+    padding: 20px;
+
+}
+
+.menuContainer{
+    background-color: $mainColor;
+}
+
+.tagA {
+    text-decoration: none;
+    color: $white;
+    &:hover{
+        text-decoration: none;
+        color: $white;
+    }
+}

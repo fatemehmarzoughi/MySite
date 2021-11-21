@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/header'
+import { SlideShow } from './components/slideShow'
+import { Carts } from './components/carts';
+import { Portfolio } from './components/portfolio';
+import { About } from './components/about';
+import {IoIosArrowUp} from 'react-icons/io';
+import { Contact } from './components/contact';
+import { Footer } from './components/footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+
+      <div className="bringToTop">
+        <IoIosArrowUp size={22} color={'#fff'} />
+      </div>
+
+      <Header />
+
+      <SlideShow />
+
+      <Carts />
+
+      <Portfolio />
+
+      <About />
+
+      <Contact />
+
+      <Footer />
+
     </div>
   );
 }
