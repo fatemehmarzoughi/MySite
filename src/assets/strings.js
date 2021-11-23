@@ -11,7 +11,7 @@ export function Getstrings(){
             about : (isFarsi) ? 'درباره ما' : 'About US',
             contact : (isFarsi) ? 'ارتباط با ما' : 'Contact',
             portfolio : (isFarsi) ? 'نمونه کارها' : 'Portfolio',
-            brand : (isFarsi) ? 'مانک' : 'Monck'
+            brand : (isFarsi) ? 'شرکت' : 'Company'
         },
 
         slidesInfo : [
