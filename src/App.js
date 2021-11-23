@@ -1,35 +1,24 @@
-import { Header } from './components/header'
-import { SlideShow } from './components/slideShow'
-import { Carts } from './components/carts';
-import { Portfolio } from './components/portfolio';
-import { About } from './components/about';
-import {IoIosArrowUp} from 'react-icons/io';
-import { Contact } from './components/contact';
-import { Footer } from './components/footer'
+
+import ContextProvider from './context/contextProvider';
+import React, { useContext, useEffect } from 'react';
+import context from './context/context';
+import { AppRoute } from './AppRoute';
+
 
 function App() {
+
+  const contexts = useContext(context);
+
+  useEffect(() => {
+    setTimeout(() => contexts.setLoading(false), 2000)
+  })
+
   return (
-    <div className="">
-
-      <div className="bringToTop">
-        <IoIosArrowUp size={22} color={'#fff'} />
-      </div>
-
-      <Header />
-
-      <SlideShow />
-
-      <Carts />
-
-      <Portfolio />
-
-      <About />
-
-      <Contact />
-
-      <Footer />
-
-    </div>
+      <>
+      <ContextProvider>
+        <AppRoute />
+      </ContextProvider>
+      </>
   );
 }
 

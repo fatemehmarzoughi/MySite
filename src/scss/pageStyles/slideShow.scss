@@ -1,4 +1,6 @@
 $slideShowHeight : 600px;
+$slideShowHeightResponsive1 : 400px;
+$slideShowHeightResponsive2 : 250px;
 
 .slideShowContainer{
     overflow: hidden;
@@ -6,12 +8,24 @@ $slideShowHeight : 600px;
     height: $slideShowHeight;
     padding: 0%;
     position: relative;
+    @media screen and (max-width : 700px) {
+        height: $slideShowHeightResponsive1;
+    }
+    @media screen and (max-width : 550px) {
+        height: $slideShowHeightResponsive2;
+    }
 
 }
 .imageStyle{
     width: 25%;
     height: $slideShowHeight;
     // position: absolute;
+    @media screen and (max-width : 700px) {
+        height: $slideShowHeightResponsive1;
+    }
+    @media screen and (max-width : 550px) {
+        height: $slideShowHeightResponsive2;
+    }
 }
 
 .images{
@@ -21,6 +35,12 @@ $slideShowHeight : 600px;
     @include flex(center,center ,row );
     overflow: hidden;
     transition: transform 200ms;
+    @media screen and (max-width : 700px) {
+        height: $slideShowHeightResponsive1;
+    }
+    @media screen and (max-width : 550px) {
+        height: $slideShowHeightResponsive2;
+    }
 }
 
 .cover{
@@ -32,6 +52,12 @@ $slideShowHeight : 600px;
     z-index: 12;
     direction: rtl;
     color: $white;
+    @media screen and (max-width : 700px) {
+        height: $slideShowHeightResponsive1;
+    }
+    @media screen and (max-width : 550px) {
+        height: $slideShowHeightResponsive2;
+    }
 }
 
 .texts{

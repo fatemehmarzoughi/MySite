@@ -14,13 +14,16 @@
        text-align: center;
        margin: 10px;
        color: $white;
+       border: solid $mainColor 2px;
        .socialIcon{
            text-align: center;
            padding : 0px;
-           margin : auto
+           margin : auto;
        }
        &:hover{
            animation : grow 500ms ;
+           background-color: $white;
+           color: $mainColor;
        }
     }
 }

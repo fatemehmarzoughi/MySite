@@ -5,15 +5,50 @@
     margin-left: 0px;
     border-radius: 5px;
     border-width: 1px;
+    margin-right: 0px;
 }
 .btn{
     padding : 10px 50px;
     background-color: $mainColor;
     color: $white;
+    border: solid $mainColor 1px;
+    font-size: 18px;
     &:hover{
-        color: $white;
+        color: $mainColor;
+        background-color: $white;
     }
 }
 .contact-container{
     margin-bottom: 100px;
+}
+
+.emailName{
+    @media screen and (max-width : 768px) {
+        flex-direction: column;
+    }
+}
+
+.contact{
+    @media screen and (max-width : 574px) {
+        flex-direction: column;
+    }
+}
+
+.contact_texts{
+    @media screen and (max-width : 574px) {
+        margin-bottom: 50px;
+    }
+}
+
+.sendingIcon{
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.sentMessage{
+    font-size: 30px;
+    border: solid 1px $mainColor;
+    @include flex(center, center, row);
+    border-radius: 5px;
 }

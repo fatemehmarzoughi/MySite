@@ -1,30 +1,10 @@
 import React, {useEffect, useState} from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Getstrings } from "../assets/strings";
 
 export function SlideShow(){
 
-    const slidesInfo = [
-        {
-            title : 'Minimal Design',
-            subTitle : 'Culture and Creativity',
-            img : 'img/i1.jpeg'
-        },
-        {
-            title : 'Popular Design',
-            subTitle : 'Culture and Creativity',
-            img : 'img/i2.jpeg'
-        },
-        {
-            title : 'The Best Design',
-            subTitle : 'Culture and Creativity',
-            img : 'img/i3.jpeg'
-        },
-        {
-            title : 'Here are Designs',
-            subTitle : 'Culture and Creativity',
-            img : 'img/i4.jpeg'
-        },
-    ]
+    const slidesInfo = Getstrings().slidesInfo;
 
     const toRight = (manualChange) => {
         if(manualChange) setManualChange(true);

@@ -3,6 +3,7 @@ $mainColor : #000000;
 $white : #fff;
 $gray : #e9e9e9;
 $coverColor : #0000009e;
+
 @mixin flex( $alignItems, $justifyContent, $direction ) {
     display: flex;
     align-items: $alignItems;
@@ -22,3 +23,6 @@ $coverColor : #0000009e;
 @import './pageStyles//about.scss';
 @import './pageStyles/contact.scss';
 @import './pageStyles/footer.scss';
+@import './pageStyles/loading.scss'
+
+

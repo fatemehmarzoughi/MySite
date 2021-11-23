@@ -1,4 +1,5 @@
-import {AiOutlineCopyrightCircle} from 'react-icons/ai'
+import {AiOutlineCopyrightCircle} from 'react-icons/ai';
+import { Getstrings } from '../assets/strings';
 
 export function Footer(){
 
@@ -6,7 +7,7 @@ export function Footer(){
         <div className="container-xxl footer">
             <p className="footerText">
                 <AiOutlineCopyrightCircle className="footerIcon" size={22} /> 
-                All Rights are reserved. Created by fatemeh marzoughi
+                {Getstrings().footer}
             </p>
         </div>
     )

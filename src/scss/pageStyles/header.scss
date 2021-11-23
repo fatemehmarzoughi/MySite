@@ -2,18 +2,56 @@
 .list{
     list-style: none;
     padding: 20px;
-
+    &:hover{
+        background-color: $white;
+        a{
+            color: $mainColor;
+        }
+    }
 }
 
 .menuContainer{
     background-color: $mainColor;
 }
 
+.menuIcon{
+    display: none;
+    z-index: 300;
+    @media screen and (max-width : 991px) {
+        display: flex;
+    }
+
+}
+
 .tagA {
     text-decoration: none;
     color: $white;
-    &:hover{
+    &:active{
         text-decoration: none;
         color: $white;
+    }
+}
+
+.menu{
+    // transition: height 400ms;
+    // height: unset;
+    // opacity: 1;
+    @media screen and (max-width : 991px) {
+        .menu.active{
+            height: auto;
+            opacity: 1;
+            transition: height 400ms;
+        }
+    }
+}
+
+.headerContainer{
+    @media screen and (max-width : 991px) {
+        justify-content: space-between !important;
+    }
+    &:hover{
+        .menu{
+            height: auto;
+        }
     }
 }

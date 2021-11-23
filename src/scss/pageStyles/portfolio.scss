@@ -6,6 +6,9 @@
 .rows{
     @include flex(center,center ,row );
     width: 100%;
+    @media screen and (max-width : 770px) {
+        flex-direction: column;
+    }
 }
 
 .img{
@@ -42,3 +45,4 @@
         }
     }
 }
+

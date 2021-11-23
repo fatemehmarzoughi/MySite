@@ -1,21 +1,28 @@
+
+import { Getstrings } from "../assets/strings"
+
+
 export function Carts() {
+
+    const cards = Getstrings().cards;
+    
     return(
         <div className="container">
             <div className="carts row">
                 <div className="col cart">
-                    <h1>10</h1>
-                    <h5>Title</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lah1ore et dolore magna aliqua.</p>
+                    <h1>{cards[0].h1}</h1>
+                    <h5>{cards[0].h5}</h5>
+                    <p>{cards[0].paragraph}</p>
                 </div>
                 <div className="col cart">
-                    <h1>10</h1>
-                    <h5>Title</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lah1ore et dolore magna aliqua.</p>
+                    <h1>{cards[1].h1}</h1>
+                    <h5>{cards[1].h5}</h5>
+                    <p>{cards[1].paragraph}</p>
                 </div>
                 <div className="col cart">
-                    <h1>10</h1>
-                    <h5>Title</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h1>{cards[2].h1}</h1>
+                    <h5>{cards[2].h5}</h5>
+                    <p>{cards[2].paragraph}</p>
                 </div>
             </div>
         </div>

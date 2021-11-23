@@ -1,4 +1,14 @@
 
 .about_row{
     margin-top: 15px;
+    @media screen and (max-width : 575px) {
+        flex-direction: column ;
+    }
 }
+
+.aboutUs-firstSection{
+    @media screen and (max-width : 770px) {
+        flex-direction: column ;
+    }
+}
+
