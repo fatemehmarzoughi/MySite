@@ -36,22 +36,31 @@
     // transition: height 400ms;
     // height: unset;
     // opacity: 1;
+    transform: translateY(0%);
     @media screen and (max-width : 991px) {
-        .menu.active{
-            height: auto;
-            opacity: 1;
-            transition: height 400ms;
-        }
+        // .menu.active{
+        //     height: auto;
+        //     opacity: 1;
+        //     transition: height 400ms;
+        // }
+        transform: translateY(-120%);
     }
+}
+.menu.active{
+    transform: translateY(0%);
 }
 
 .headerContainer{
+    height : 450px;
+    transition: height 500ms;
     @media screen and (max-width : 991px) {
         justify-content: space-between !important;
+        height : 60px;
+        transition: height 500ms;
     }
-    &:hover{
-        .menu{
-            height: auto;
-        }
-    }
+}
+
+.headerContainer.active{
+    height : 450px;
+    transition: height 500ms;
 }

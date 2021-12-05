@@ -6,24 +6,13 @@ import { Getstrings } from '../assets/strings';
 
 export function Header() {
 
-    const width = window.innerWidth;
-    const [menuOpacity , setMenuOpacity] = useState((width > 991) ? 1 : 0);
-    const [menuHeight , setMenuHeight] = useState((width > 991) ? 'auto' : 0);
+    const [menuIsOpen , setMenuIsOpen] = useState(false)
 
     const contexts = useContext(context);
     const isFarsi = contexts.language === 'fa';
 
     const openMenu = () => {
-      if(menuHeight === 0)
-      {
-        setMenuHeight('auto');
-        setMenuOpacity(1);
-      }
-      else 
-      {
-        setMenuHeight(0);
-        setMenuOpacity(0);
-      }
+      setMenuIsOpen(!menuIsOpen)
     }
 
     const changeLanguage = (lang) => {
@@ -34,8 +23,8 @@ export function Header() {
 
     return(
         <nav id='top' className="navbar navbar-expand-lg menuContainer container-xxl">
-          <div className='container headerContainer' style={isFarsi ? {direction : 'rtl'} : {direction : 'ltr'}}>
-            <ul className="container menu navbar-nav" style={{height : menuHeight , opacity : menuOpacity, order : 3}}>
+          <div className={menuIsOpen ? 'container headerContainer active' : 'container headerContainer'}  style={isFarsi ? {direction : 'rtl'} : {direction : 'ltr'}}>
+            <ul className={menuIsOpen ? "container menu navbar-nav active" : "container menu navbar-nav"} style={{ order : 3}}>
               <li className="list">
                 <a className='tagA' href='#home'>{Getstrings().navBarTitles.home}</a>
               </li>
