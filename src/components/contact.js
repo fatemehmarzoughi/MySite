@@ -53,14 +53,14 @@ export function Contact(){
             <Heading title={Getstrings().contact.mainTitle} isContact={true} />
 
             <div className="row contact" style={isFarsi ? {direction : 'rtl'} : {direction : 'ltr'}}>
-                <div className="col contact_texts">
+                <div data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500" className="col contact_texts">
                     <h2>{Getstrings().contact.secondSection.title}</h2>
                     <p>{Getstrings().contact.secondSection.paragraph}</p>
                     <b>{Getstrings().contact.secondSection.Address}</b> 
                     <br /> 
                     <b>{Getstrings().contact.secondSection.telephone}</b>
                 </div>
-                <form style={{display : formDisplay}} className="col" onSubmit={(e) => sendEmail(e)}>
+                <form data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500" style={{display : formDisplay}} className="col" onSubmit={(e) => sendEmail(e)}>
                     <b style={{color : 'red', display : errorDisplay}}>{messageFailed}</b>
                     <div className="row emailName" style={{margin : '0px'}}>
                        <input className='col input' name="name" placeholder={Getstrings().contact.form.name} type="text" required/>

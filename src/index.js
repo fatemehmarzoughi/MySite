@@ -5,7 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './scss/main.scss';
 import './assets/fonts/B-NAZANIN.TTF'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init()
 ReactDOM.render(
   <React.StrictMode>
     <App />

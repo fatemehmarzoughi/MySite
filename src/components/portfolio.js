@@ -8,7 +8,7 @@ export function Portfolio() {
             <Heading title={Getstrings().portfolio.mainTitle} />
             <div className="rows">
                 <div className="columns">
-                   <div className="cardContent">
+                   <div  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" className="cardContent">
                         <img className="img-fluid img"  src="img/img1.jpeg" alt="" />
                         <div className="portfoilio_covers">
                             <div className="texts">
@@ -17,7 +17,7 @@ export function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className="cardContent">
+                    <div  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" className="cardContent">
                         <img className="img-fluid img"  src="img/img6.jpeg" alt="" />
                         <div className="portfoilio_covers">
                             <div className="texts">
@@ -29,7 +29,7 @@ export function Portfolio() {
                 </div>
 
                 <div className="columns">
-                   <div className="cardContent">
+                   <div  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" className="cardContent">
                         <img className="img-fluid img"  src="img/img6.jpeg" alt="" />
                         <div className="portfoilio_covers">
                             <div className="texts">
@@ -38,7 +38,7 @@ export function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className="cardContent">
+                    <div  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" className="cardContent">
                         <img className="img-fluid img"  src="img/img1.jpeg" alt="" />
                         <div className="portfoilio_covers">
                             <div className="texts">
@@ -50,7 +50,7 @@ export function Portfolio() {
                 </div>
 
                 <div className="columns">
-                   <div className="cardContent">
+                   <div  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" className="cardContent">
                         <img className="img-fluid img"  src="img/img1.jpeg" alt="" />
                         <div className="portfoilio_covers">
                             <div className="texts">
@@ -59,7 +59,7 @@ export function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className="cardContent">
+                    <div  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" className="cardContent">
                         <img className="img-fluid img"  src="img/img6.jpeg" alt="" />
                         <div className="portfoilio_covers">
                             <div className="texts">
