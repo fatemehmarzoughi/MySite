@@ -61,6 +61,10 @@
 }
 
 .headerContainer.active{
-    height : 450px;
+    height : 60px;
     transition: height 500ms;
+    @media screen and (max-width : 991px) {
+        height : 450px;
+        transition: height 500ms;
+    }
 }
