@@ -9,9 +9,12 @@
     border-radius: 60%;
     @include flex(center, center, row);
     cursor: pointer;
-    &:active{
-        animation: grow 500ms;
-    }
+    // &:active{
+    //     animation: grow 500ms;
+    // }
+    // :hover{
+        animation: appear 1s 1 both;
+    // }
 }
 
 
@@ -21,4 +24,13 @@
     50% { width: 70px; height: 70px ;}
     75% { width: 65px; height: 65px ;}
     100% { width: 60px; height: 60px ;}
+}
+
+@keyframes appear {
+    0%{
+        clip-path: circle(30% at -25% -25%);
+    }
+    100%{
+        clip-path: circle(150% at 0 0);
+    }
 }

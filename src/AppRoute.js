@@ -6,7 +6,7 @@ import { About } from './components/about';
 import {IoIosArrowUp} from 'react-icons/io';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer'
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { Loading } from './components/loading';
 import context from './context/context';
 
@@ -20,14 +20,25 @@ export function AppRoute(){
       setTimeout(() => contexts.setLoading(false), 2000)
     })
 
+    const myRef = useRef(null);
+
+    const clone = () => {
+       const newDom = React.cloneElement(myRef, {});
+       console.log(newDom)
+       React.createElement(newDom)
+    }
+
     return(
         <>
         {loading ? (
         <Loading />
       ) : (
 
-            <div className="" style={isFarsi ? {fontFamily : 'B-Nazanin', fontSize : '20px'} : {}}>
+            <div ref={myRef} className="" style={isFarsi ? {fontFamily : 'B-Nazanin', fontSize : '20px'} : {}}>
     
+              {/* <a onClick={() => clone()} className="bringToTop">
+                <IoIosArrowUp size={22} color={'#fff'} />
+              </a> */}
               <a href="#top" className="bringToTop">
                 <IoIosArrowUp size={22} color={'#fff'} />
               </a>

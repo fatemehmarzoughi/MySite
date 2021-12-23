@@ -79,10 +79,10 @@ export function SlideShow(){
     const [subTitle , setSubTitle] = useState(slidesInfo[0].subTitle)
     const [manualChange ,setManualChange] = useState(false)
 
-    useEffect(() => {
-        if(!manualChange)
-           setTimeout(() => toRight(false) , 3000)
-    })
+    // useEffect(() => {
+    //     if(!manualChange)
+    //        setTimeout(() => toRight(false) , 3000)
+    // })
 
 
     return(
